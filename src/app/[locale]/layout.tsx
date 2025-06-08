@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import ReduxProvider from "@/providers/ReduxProvider";
 import { Locale } from "@/i18n.config";
 import { Directions, Languages } from "@/consts/enum";
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,6 +53,8 @@ export default async function RootLayout({
           {children}
 
           <Footer />
+
+          <Toaster />
         </ReduxProvider>
       </body>
     </html>

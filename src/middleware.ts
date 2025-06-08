@@ -44,10 +44,8 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
+  // Matcher ignoring `/_next/`, `/api/`, ..etc
   matcher: [
-    // Skip all internal paths (_next)
-    "/((?!_next).*)",
-    // Optional: only run on root (/) URL
-    // '/'
+    "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)",
   ],
 };

@@ -1,31 +1,94 @@
 {
-    "logo": "Pizza",
-    "hero": {
-        "title": "Slice into happiness",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!",
-        "orderNow": "Order now",
-        "learnMore": "Order now"
+  "logo": "Pizza",
+  "hero": {
+    "title": "Slice into happiness",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!",
+    "orderNow": "Order now",
+    "learnMore": "Order now"
+  },
+  "bestSellers": {
+    "title": "Our Best Sellers",
+    "subTitle": "checkout",
+    "noProducts": "No products found"
+  },
+  "about": {
+    "title": "About us",
+    "subTitle": "Our story",
+    "txt1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!",
+    "txt2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!",
+    "txt3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!"
+  },
+  "contact": {
+    "title": "Dont't hesitate to reach out",
+    "subTitle": "Contact us"
+  },
+  "navbar": {
+    "login": "Login",
+    "menu": "Menu",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "auth": {
+    "login": {
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password"
+      },
+      "button": "Login",
+      "title": "Welcome back",
+      "message": "Dont have an account",
+      "signUpLinkText": "Sign up"
     },
-    "bestSellers": {
-        "title": "Our Best Sellers",
-        "subTitle": "checkout",
-        "noProducts": "No products found"
-    },
-    "about": {
-        "title": "About us",
-        "subTitle": "Our story",
-        "txt1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!",
-        "txt2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!",
-        "txt3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!"
-    },
-    "contact": {
-        "title": "Dont't hesitate to reach out",
-        "subTitle": "Contact us"
-    },
-    "navbar": {
-        "login": "Login",
-        "menu": "Menu",
-        "about": "About",
-        "contact": "Contact"
+    "signUp": {
+      "name": {
+        "label": "Nme",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password"
+      },
+      "confirmPassword": {
+        "label": "Confirm Password",
+        "placeholder": "Confirm your password"
+      },
+      "title": "Register",
+      "message": "Already have an account",
+      "signInLinkText": "Sign in",
+      "button": "Register"
     }
+  },
+  "validation": {
+    "nameRequired": "Name is required",
+    "validEmail": "Must be a valid email",
+    "passwordMinLength": "Password must be at least 6 characters",
+    "passwordMaxLength": "Password must be at most 40 characters",
+    "confirmPasswordRequired": "Confirm Password is required",
+    "passwordMismatch": "Password do not match"
+  },
+  "messages": {
+    "userNotFound": "User not found",
+    "incorrectPassword": "Incorrect password",
+    "loginSuccessful": "Login successful",
+    "unexpectedError": "An unexpected error occurred",
+    "userAlreadyExists": "User already exists.",
+    "accountCreated": "Account created successfully",
+    "updateProfileSucess": "Profile updated successfull",
+    "categoryAdded": "Category added successfully",
+    "updatecategorySucess": "Category updated successfull",
+    "deleteCategorySucess": "Category deleted successfull",
+    "productAdded": "Product added successfully",
+    "updateProductSucess": "Product updated successfull",
+    "deleteProductSucess": "Product deleted successfull",
+    "updateUserSucess": "User updated successfull",
+    "deleteUserSucess": "User deleted successfull"
+  }
 }

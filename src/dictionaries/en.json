@@ -1,6 +1,9 @@
 {
   "logo": "Pizza",
   "save": "Save",
+  "create": "Create",
+  "noCategoriesFound": "No categories found",
+  "noProductsFound": "No products found",
   "hero": {
     "title": "Slice into happiness",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!",
@@ -32,6 +35,13 @@
     "admin": "Admin"
   },
   "auth": {
+    "adminTabs": {
+      "profile": "Profile",
+      "categories": "Categories",
+      "menuItems": "MenuItems",
+      "users": "Users",
+      "orders": "Orders"
+    },
     "signOut": {
       "title": "Signout"
     },
@@ -100,6 +110,20 @@
           "label": "Country",
           "placeholder": "Enter your country"
         }
+      }
+    }
+  },
+  "admin": {
+    "categories": {
+      "form": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Enter a name",
+          "validation": {
+            "required": "Name is required"
+          }
+        },
+        "editName": "Edit"
       }
     }
   },

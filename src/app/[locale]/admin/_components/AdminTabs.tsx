@@ -53,7 +53,7 @@ const AdminTabs = ({ translations }: { translations: Translations }) => {
           <li key={tab.id}>
             <Link
               href={`/${locale}/${tab.href}`}
-              className={`hover:!text-white ${
+              className={`hover:bg-primary/50 hover:text-white ${
                 isActiveTab(tab.href)
                   ? buttonVariants({ variant: "default" })
                   : buttonVariants({ variant: "outline" })

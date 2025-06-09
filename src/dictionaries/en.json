@@ -4,6 +4,7 @@
   "create": "Create",
   "noCategoriesFound": "No categories found",
   "noProductsFound": "No products found",
+  "category": "Category",
   "hero": {
     "title": "Slice into happiness",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!",
@@ -124,6 +125,23 @@
           }
         },
         "editName": "Edit"
+      }
+    },
+    "menu-items": {
+      "createNewMenuItem": "Create new menu items",
+      "form": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Enter name"
+        },
+        "description": {
+          "label": "Description",
+          "placeholder": "Enter description"
+        },
+        "basePrice": {
+          "label": "Base price",
+          "placeholder": "Enter Base price"
+        }
       }
     }
   },

@@ -1,5 +1,6 @@
 {
   "logo": "Pizza",
+  "save": "Save",
   "hero": {
     "title": "Slice into happiness",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!",
@@ -26,9 +27,14 @@
     "login": "Login",
     "menu": "Menu",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "profile": "Profile",
+    "admin": "Admin"
   },
   "auth": {
+    "signOut": {
+      "title": "Signout"
+    },
     "login": {
       "email": {
         "label": "Email",
@@ -64,6 +70,37 @@
       "message": "Already have an account",
       "signInLinkText": "Sign in",
       "button": "Register"
+    },
+    "profile": {
+      "title": "Profile",
+      "form": {
+        "phone": {
+          "label": "Phone",
+          "placeholder": "Enter your phone",
+          "validation": {
+            "invalid": "invalid phone"
+          }
+        },
+        "streetAddress": {
+          "label": "Street Address",
+          "placeholder": "Enter your street Address"
+        },
+        "postalCode": {
+          "label": "Postal code",
+          "placeholder": "Enter your postal code",
+          "validation": {
+            "invalid": "invalid postal code"
+          }
+        },
+        "city": {
+          "label": "City",
+          "placeholder": "Enter your city"
+        },
+        "country": {
+          "label": "Country",
+          "placeholder": "Enter your country"
+        }
+      }
     }
   },
   "validation": {

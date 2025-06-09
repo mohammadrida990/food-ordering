@@ -25,6 +25,7 @@ model User {
   postalCode    String?
   city          String?
   country       String?
+  role          UserRole       @default(USER)
   createdAt     DateTime       @default(now())
   updatedAt     DateTime       @updatedAt
   orders        OrderProduct[]
@@ -166,4 +167,9 @@ enum ExtraType {
   SPINACH
   TOMATOES
   BASIL
+}
+
+enum UserRole {
+  USER
+  ADMIN
 }

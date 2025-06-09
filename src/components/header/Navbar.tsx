@@ -1,17 +1,26 @@
 "use client";
 
 import Link from "@/components/link";
-import { Pages, Routes } from "@/consts/enum";
+import { Routes } from "@/consts/enum";
 import React from "react";
-import { Button, buttonVariants } from "../ui/button";
+import { Button } from "../ui/button";
 import { Menu, XIcon } from "lucide-react";
 import { useParams, usePathname } from "next/navigation";
-
+import AuthButtons from "./AuthButtons";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { Translations } from "@/types/trans";
+import { Session } from "next-auth";
+import { useClientSession } from "@/hooks/useClientSession";
+import { UserRole } from "@prisma/client";
+//translations: { [key: string]: string };
 const Navbar = ({
   translations,
+  initialSession,
 }: {
-  translations: { [key: string]: string };
+  translations: Translations;
+  initialSession: Session;
 }) => {
+  const session = useClientSession(initialSession);
   const { locale } = useParams();
   const pathname = usePathname();
   const [openMenu, setOpenMenu] = React.useState(false);
@@ -19,27 +28,25 @@ const Navbar = ({
   const links = [
     {
       id: crypto.randomUUID(),
-      title: translations.menu,
+      title: translations.navbar.menu,
       href: Routes.MENU,
     },
     {
       id: crypto.randomUUID(),
-      title: translations.about,
+      title: translations.navbar.about,
       href: Routes.ABOUT,
     },
     {
       id: crypto.randomUUID(),
-      title: translations.contact,
+      title: translations.navbar.contact,
       href: Routes.CONTACT,
     },
-    {
-      id: crypto.randomUUID(),
-      title: translations.login,
-      href: `${Routes.AUTH}/${Pages.LOGIN}`,
-    },
   ];
+
+  const isAdmin = session.data?.user.role === UserRole.ADMIN;
+
   return (
-    <nav className="flex-1 justify-end flex">
+    <nav className="order-last lg:order-none">
       <Button
         variant="secondary"
         size="sm"
@@ -67,21 +74,56 @@ const Navbar = ({
         {links.map((link) => (
           <li key={link.id}>
             <Link
+              onClick={() => setOpenMenu(false)}
               href={`/${locale}/${link.href}`}
-              className={`${
-                link.href === `${Routes.AUTH}/${Pages.LOGIN}`
-                  ? `${buttonVariants({ size: "lg" })} !px-8 !rounded-full`
-                  : " hover:text-primary duration-200 transition-colors"
-              }  font-semibold ${
-                pathname.startsWith(`/${locale}/${link.href}`)
-                  ? "text-primary"
-                  : "text-accent"
-              }`}
+              className={`hover:text-primary duration-200 transition-colors font-semibold
+                   ${
+                     pathname.startsWith(`/${locale}/${link.href}`)
+                       ? "text-primary"
+                       : "text-accent"
+                   }`}
             >
               {link.title}
             </Link>
           </li>
         ))}
+
+        <li className="lg:hidden flex flex-col gap-4">
+          <div onClick={() => setOpenMenu(false)}>
+            <AuthButtons
+              translations={translations}
+              initialSession={initialSession}
+            />
+          </div>
+
+          <LanguageSwitcher />
+        </li>
+
+        {session.data?.user && (
+          <li>
+            <Link
+              href={
+                isAdmin
+                  ? `/${locale}/${Routes.ADMIN}`
+                  : `/${locale}/${Routes.PROFILE}`
+              }
+              onClick={() => setOpenMenu(false)}
+              className={`${
+                pathname.startsWith(
+                  isAdmin
+                    ? `/${locale}/${Routes.ADMIN}`
+                    : `/${locale}/${Routes.PROFILE}`
+                )
+                  ? "text-primary"
+                  : "text-accent"
+              } hover:text-primary duration-200 transition-colors font-semibold`}
+            >
+              {isAdmin
+                ? translations.navbar.admin
+                : translations.navbar.profile}
+            </Link>
+          </li>
+        )}
       </ul>
     </nav>
   );

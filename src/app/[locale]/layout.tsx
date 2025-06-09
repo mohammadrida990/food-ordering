@@ -7,6 +7,7 @@ import ReduxProvider from "@/providers/ReduxProvider";
 import { Locale } from "@/i18n.config";
 import { Directions, Languages } from "@/consts/enum";
 import { Toaster } from "@/components/ui/sonner";
+import NextAuthSessionProvider from "@/providers/NextAuthSessionProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,15 +48,17 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.className} antialiased`}
       >
-        <ReduxProvider>
-          <Header />
+        <NextAuthSessionProvider>
+          <ReduxProvider>
+            <Header />
 
-          {children}
+            {children}
 
-          <Footer />
+            <Footer />
 
-          <Toaster />
-        </ReduxProvider>
+            <Toaster />
+          </ReduxProvider>
+        </NextAuthSessionProvider>
       </body>
     </html>
   );

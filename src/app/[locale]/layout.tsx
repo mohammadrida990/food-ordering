@@ -9,6 +9,10 @@ import { Directions, Languages } from "@/consts/enum";
 import { Toaster } from "@/components/ui/sonner";
 import NextAuthSessionProvider from "@/providers/NextAuthSessionProvider";
 
+export async function generateStaticParams() {
+  return [{ locale: Languages.ARABIC }, { locale: Languages.ENGLISH }];
+}
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

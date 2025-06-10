@@ -4,10 +4,12 @@ import { Languages, Pages, Routes, UserRole } from "@/consts/enum";
 import { Locale } from "@/i18n.config";
 import getTrans from "@/lib/translation";
 import { authOptions } from "@/server/auth";
+import { getProducts } from "@/server/db/products";
 import { ArrowRightCircle } from "lucide-react";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import React from "react";
+import MenuItems from "./_components/MenuItems";
 
 const menuItemsPage = async ({
   params,
@@ -17,6 +19,8 @@ const menuItemsPage = async ({
   const { locale } = await params;
   const translations = await getTrans(locale);
   const session = await getServerSession(authOptions);
+
+  const products = await getProducts();
 
   if (!session) {
     redirect(`/${locale}/${Routes.AUTH}/${Pages.LOGIN}`);
@@ -44,6 +48,8 @@ const menuItemsPage = async ({
               }`}
             />
           </Link>
+
+          <MenuItems products={products} />
         </div>
       </section>
     </main>

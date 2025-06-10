@@ -113,6 +113,6 @@ const getImageUrl = async (imageFile: File) => {
 
     return image.url;
   } catch (error) {
-    console.error("Error uploading filr to supabase", error);
+    console.error("Error uploading file to supabase", error);
   }
 };

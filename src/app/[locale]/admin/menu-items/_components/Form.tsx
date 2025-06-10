@@ -24,7 +24,11 @@ import { Translations } from "@/types/trans";
 import { Pages, Routes } from "@/consts/enum";
 import { toast } from "sonner";
 import Loader from "@/components/Loader";
-import { addProduct, deleteProduct } from "../_actions/addProduct";
+import {
+  addProduct,
+  deleteProduct,
+  updateProduct,
+} from "../_actions/addProduct";
 
 function Form({
   translations,
@@ -77,7 +81,12 @@ function Form({
   };
 
   const [state, action, pending] = useActionState(
-    addProduct.bind(null, { categoryId, options: { sizes, extras } }),
+    product
+      ? updateProduct.bind(null, {
+          productId: product.id,
+          options: { sizes, extras },
+        })
+      : addProduct.bind(null, { categoryId, options: { sizes, extras } }),
     initialState
   );
 

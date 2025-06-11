@@ -3,8 +3,13 @@ import Image from "next/image";
 import React from "react";
 import AddToCartButton from "./AddToCartButton";
 import { ProductWithRelations } from "@/types/product";
+import { getCurrentLocale } from "@/lib/getCurrentLocale";
+import getTrans from "@/lib/translation";
 
-const MenuItem = ({ item }: { item: ProductWithRelations }) => {
+const MenuItem = async ({ item }: { item: ProductWithRelations }) => {
+  const locale = await getCurrentLocale();
+  const translations = await getTrans(locale);
+
   return (
     <li className="p-6 rounded-lg text-center group hover:bg-white hover:shadow-md hover:shadow-black/25 transition-all">
       <div className="relative w-48 h-48 mx-auto">
@@ -26,7 +31,7 @@ const MenuItem = ({ item }: { item: ProductWithRelations }) => {
 
       <p className="text-gray-600 text-sm line-clamp-3">{item.description}</p>
 
-      <AddToCartButton item={item} />
+      <AddToCartButton item={item} translations={translations} />
     </li>
   );
 };

@@ -26,8 +26,15 @@ import {
 } from "@/redux/features/cart/cartSlice";
 import { useState } from "react";
 import { getItemQuantity } from "@/lib/cart";
+import { Translations } from "@/types/trans";
 
-const AddToCartButton = ({ item }: { item: ProductWithRelations }) => {
+const AddToCartButton = ({
+  item,
+  translations,
+}: {
+  item: ProductWithRelations;
+  translations: Translations;
+}) => {
   const cart = useAppSelector(selectCartItems);
   const dispatch = useAppDispatch();
   const qty = getItemQuantity(item.id, cart);
@@ -74,7 +81,7 @@ const AddToCartButton = ({ item }: { item: ProductWithRelations }) => {
           size="lg"
           className="mt-4 text-white rounded-full !px-8"
         >
-          <span>Add To Cart</span>
+          <span>{translations.cart.button}</span>
         </Button>
       </DialogTrigger>
 
@@ -91,7 +98,7 @@ const AddToCartButton = ({ item }: { item: ProductWithRelations }) => {
         <div className="space-y-10">
           <div className="text-center space-y-4">
             <Label htmlFor="pick-size" className="flex justify-center">
-              Pick your size
+              {translations.cart.pick}
             </Label>
 
             <PickSize
@@ -107,7 +114,7 @@ const AddToCartButton = ({ item }: { item: ProductWithRelations }) => {
               htmlFor="add-extras"
               className="text-center items-center flex justify-center"
             >
-              Any Extras
+              {translations.cart.anyExtra}
             </Label>
 
             <Extras
@@ -125,7 +132,8 @@ const AddToCartButton = ({ item }: { item: ProductWithRelations }) => {
               className="w-full h-10"
               onClick={handleAddToCart}
             >
-              Add to cart {formateCurrency(totalPrice)}
+              <span>{translations.cart.button}</span>
+              {formateCurrency(totalPrice)}
             </Button>
           ) : (
             <ChooseQuantity
@@ -133,6 +141,7 @@ const AddToCartButton = ({ item }: { item: ProductWithRelations }) => {
               item={item}
               selectedExtras={selectedExtras}
               selectedSize={selectedSize}
+              translations={translations}
             />
           )}
         </DialogFooter>
@@ -222,11 +231,13 @@ const ChooseQuantity = ({
   item,
   selectedExtras,
   selectedSize,
+  translations,
 }: {
   quantity: number;
   selectedExtras: Extra[];
   selectedSize: Size;
   item: ProductWithRelations;
+  translations: Translations;
 }) => {
   const dispatch = useAppDispatch();
   return (
@@ -239,7 +250,9 @@ const ChooseQuantity = ({
           -
         </Button>
         <div>
-          <span className="text-black">{quantity} in cart</span>
+          <span className="text-black">
+            {quantity} {translations.cart.inCart}
+          </span>
         </div>
         <Button
           variant="outline"
@@ -264,7 +277,7 @@ const ChooseQuantity = ({
         size="sm"
         onClick={() => dispatch(removeItemFromCart({ id: item.id }))}
       >
-        Remove
+        {translations.remove}
       </Button>
     </div>
   );

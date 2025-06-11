@@ -1,119 +1,120 @@
 {
-  "logo": "Pizza",
-  "save": "Save",
-  "delete": "Delete",
-  "cancel": "Cancel",
-  "create": "Create",
-  "extrasIngredients": "extrasIngredients",
-  "noCategoriesFound": "No categories found",
-  "noProductsFound": "No products found",
-  "category": "Category",
-  "sizes": "Sizes",
+  "logo": "بيتزا",
+  "save": "حفظ",
+  "delete": "حذف",
+  "cancel": "إلغاء",
+  "create": "إنشاء",
+  "remove": "إزالة",
+  "extrasIngredients": "مكونات إضافية",
+  "noCategoriesFound": "لم يتم العثور على أي تصنيفات",
+  "noProductsFound": "لم يتم العثور على أي منتجات",
+  "category": "التصنيف",
+  "sizes": "الأحجام",
   "hero": {
-    "title": "Slice into happiness",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!",
-    "orderNow": "Order now",
-    "learnMore": "Order now"
+    "title": "اقطع شريحة من السعادة",
+    "description": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسيسينغ إيليت. كوم دولوريمك سابيينتي نولا فوجا نام دولوريم!",
+    "orderNow": "اطلب الآن",
+    "learnMore": "اطلب الآن"
   },
   "bestSellers": {
-    "title": "Our Best Sellers",
-    "subTitle": "checkout",
-    "noProducts": "No products found"
+    "title": "الأكثر مبيعًا",
+    "subTitle": "تصفح",
+    "noProducts": "لم يتم العثور على منتجات"
   },
   "about": {
-    "title": "About us",
-    "subTitle": "Our story",
-    "txt1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!",
-    "txt2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!",
-    "txt3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumdoloremque sapiente nulla fuga nam dolorem!"
+    "title": "معلومات عنا",
+    "subTitle": "قصتنا",
+    "txt1": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسيسينغ إيليت. كوم دولوريمك سابيينتي نولا فوجا نام دولوريم!",
+    "txt2": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسيسينغ إيليت. كوم دولوريمك سابيينتي نولا فوجا نام دولوريم! لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسيسينغ إيليت. كوم دولوريمك سابيينتي نولا فوجا نام دولوريم!",
+    "txt3": "لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسيسينغ إيليت. كوم دولوريمك سابيينتي نولا فوجا نام دولوريم! لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسيسينغ إيليت. كوم دولوريمك سابيينتي نولا فوجا نام دولوريم! لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسيسينغ إيليت. كوم دولوريمك سابيينتي نولا فوجا نام دولوريم!"
   },
   "contact": {
-    "title": "Dont't hesitate to reach out",
-    "subTitle": "Contact us"
+    "title": "لا تتردد في التواصل معنا",
+    "subTitle": "اتصل بنا"
   },
   "navbar": {
-    "login": "Login",
-    "menu": "Menu",
-    "about": "About",
-    "contact": "Contact",
-    "profile": "Profile",
-    "admin": "Admin"
+    "login": "تسجيل الدخول",
+    "menu": "القائمة",
+    "about": "حول",
+    "contact": "اتصل بنا",
+    "profile": "الملف الشخصي",
+    "admin": "لوحة الإدارة"
   },
   "auth": {
     "adminTabs": {
-      "profile": "Profile",
-      "categories": "Categories",
-      "menuItems": "MenuItems",
-      "users": "Users",
-      "orders": "Orders"
+      "profile": "الملف الشخصي",
+      "categories": "التصنيفات",
+      "menuItems": "عناصر القائمة",
+      "users": "المستخدمين",
+      "orders": "الطلبات"
     },
     "signOut": {
-      "title": "Signout"
+      "title": "تسجيل الخروج"
     },
     "login": {
       "email": {
-        "label": "Email",
-        "placeholder": "Enter your email"
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني"
       },
       "password": {
-        "label": "Password",
-        "placeholder": "Enter your password"
+        "label": "كلمة المرور",
+        "placeholder": "أدخل كلمة المرور"
       },
-      "button": "Login",
-      "title": "Welcome back",
-      "message": "Dont have an account",
-      "signUpLinkText": "Sign up"
+      "button": "تسجيل الدخول",
+      "title": "مرحباً بعودتك",
+      "message": "ليس لديك حساب؟",
+      "signUpLinkText": "إنشاء حساب"
     },
     "signUp": {
       "name": {
-        "label": "Nme",
-        "placeholder": "Enter your name"
+        "label": "الاسم",
+        "placeholder": "أدخل اسمك"
       },
       "email": {
-        "label": "Email",
-        "placeholder": "Enter your email"
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني"
       },
       "password": {
-        "label": "Password",
-        "placeholder": "Enter your password"
+        "label": "كلمة المرور",
+        "placeholder": "أدخل كلمة المرور"
       },
       "confirmPassword": {
-        "label": "Confirm Password",
-        "placeholder": "Confirm your password"
+        "label": "تأكيد كلمة المرور",
+        "placeholder": "أكد كلمة المرور"
       },
-      "title": "Register",
-      "message": "Already have an account",
-      "signInLinkText": "Sign in",
-      "button": "Register"
+      "title": "إنشاء حساب",
+      "message": "لديك حساب بالفعل؟",
+      "signInLinkText": "تسجيل الدخول",
+      "button": "تسجيل"
     },
     "profile": {
-      "title": "Profile",
+      "title": "الملف الشخصي",
       "form": {
         "phone": {
-          "label": "Phone",
-          "placeholder": "Enter your phone",
+          "label": "رقم الهاتف",
+          "placeholder": "أدخل رقم هاتفك",
           "validation": {
-            "invalid": "invalid phone"
+            "invalid": "رقم الهاتف غير صالح"
           }
         },
         "streetAddress": {
-          "label": "Street Address",
-          "placeholder": "Enter your street Address"
+          "label": "عنوان الشارع",
+          "placeholder": "أدخل عنوان الشارع"
         },
         "postalCode": {
-          "label": "Postal code",
-          "placeholder": "Enter your postal code",
+          "label": "الرمز البريدي",
+          "placeholder": "أدخل الرمز البريدي",
           "validation": {
-            "invalid": "invalid postal code"
+            "invalid": "رمز بريدي غير صالح"
           }
         },
         "city": {
-          "label": "City",
-          "placeholder": "Enter your city"
+          "label": "المدينة",
+          "placeholder": "أدخل اسم المدينة"
         },
         "country": {
-          "label": "Country",
-          "placeholder": "Enter your country"
+          "label": "الدولة",
+          "placeholder": "أدخل اسم الدولة"
         }
       }
     }
@@ -122,77 +123,84 @@
     "categories": {
       "form": {
         "name": {
-          "label": "Name",
-          "placeholder": "Enter a name",
+          "label": "الاسم",
+          "placeholder": "أدخل الاسم",
           "validation": {
-            "required": "Name is required"
+            "required": "الاسم مطلوب"
           }
         },
-        "editName": "Edit"
+        "editName": "تعديل"
       }
     },
     "menu-items": {
-      "createNewMenuItem": "Create new menu items",
+      "createNewMenuItem": "إنشاء عنصر قائمة جديد",
       "form": {
         "name": {
-          "label": "Name",
-          "placeholder": "Enter name",
+          "label": "الاسم",
+          "placeholder": "أدخل الاسم",
           "validation": {
-            "required": "Name is required"
+            "required": "الاسم مطلوب"
           }
         },
         "description": {
-          "label": "Description",
-          "placeholder": "Enter description",
+          "label": "الوصف",
+          "placeholder": "أدخل الوصف",
           "validation": {
-            "required": "Description is required"
+            "required": "الوصف مطلوب"
           }
         },
         "basePrice": {
-          "label": "Base price",
-          "placeholder": "Enter Base price",
+          "label": "السعر الأساسي",
+          "placeholder": "أدخل السعر الأساسي",
           "validation": {
-            "required": "basePrice is required"
+            "required": "السعر الأساسي مطلوب"
           }
         },
         "image": {
           "validation": {
-            "required": "Image is required"
+            "required": "الصورة مطلوبة"
           }
         },
         "category": {
           "validation": {
-            "required": "Category is required"
+            "required": "التصنيف مطلوب"
           }
         }
       },
-      "addItemSize": "Add item size",
-      "addExtraItem": "Add extra item"
+      "addItemSize": "إضافة حجم للصنف",
+      "addExtraItem": "إضافة عنصر إضافي"
     }
   },
   "validation": {
-    "nameRequired": "Name is required",
-    "validEmail": "Must be a valid email",
-    "passwordMinLength": "Password must be at least 6 characters",
-    "passwordMaxLength": "Password must be at most 40 characters",
-    "confirmPasswordRequired": "Confirm Password is required",
-    "passwordMismatch": "Password do not match"
+    "nameRequired": "الاسم مطلوب",
+    "validEmail": "يجب أن يكون بريد إلكتروني صالح",
+    "passwordMinLength": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+    "passwordMaxLength": "يجب ألا تتجاوز كلمة المرور 40 حرفاً",
+    "confirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
+    "passwordMismatch": "كلمتا المرور غير متطابقتين"
   },
   "messages": {
-    "userNotFound": "User not found",
-    "incorrectPassword": "Incorrect password",
-    "loginSuccessful": "Login successful",
-    "unexpectedError": "An unexpected error occurred",
-    "userAlreadyExists": "User already exists.",
-    "accountCreated": "Account created successfully",
-    "updateProfileSucess": "Profile updated successfull",
-    "categoryAdded": "Category added successfully",
-    "updatecategorySucess": "Category updated successfull",
-    "deleteCategorySucess": "Category deleted successfull",
-    "productAdded": "Product added successfully",
-    "updateProductSucess": "Product updated successfull",
-    "deleteProductSucess": "Product deleted successfull",
-    "updateUserSucess": "User updated successfull",
-    "deleteUserSucess": "User deleted successfull"
-  }
+    "userNotFound": "المستخدم غير موجود",
+    "incorrectPassword": "كلمة المرور غير صحيحة",
+    "loginSuccessful": "تم تسجيل الدخول بنجاح",
+    "unexpectedError": "حدث خطأ غير متوقع",
+    "userAlreadyExists": "المستخدم موجود بالفعل",
+    "accountCreated": "تم إنشاء الحساب بنجاح",
+    "updateProfileSucess": "تم تحديث الملف الشخصي بنجاح",
+    "categoryAdded": "تمت إضافة التصنيف بنجاح",
+    "updatecategorySucess": "تم تحديث التصنيف بنجاح",
+    "deleteCategorySucess": "تم حذف التصنيف بنجاح",
+    "productAdded": "تمت إضافة المنتج بنجاح",
+    "updateProductSucess": "تم تحديث المنتج بنجاح",
+    "deleteProductSucess": "تم حذف المنتج بنجاح",
+    "updateUserSucess": "تم تحديث المستخدم بنجاح",
+    "deleteUserSucess": "تم حذف المستخدم بنجاح"
+  },
+  "cart": {
+    "button": "أضف إلى السلة",
+    "pick": "اختر المقاس",
+    "anyExtra": "أي إضافات",
+    "inCart": "في السلة"
+  },
+  "footer": "© 2025 جميع الحقوق محفوظة"
 }

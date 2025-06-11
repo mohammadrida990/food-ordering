@@ -4,6 +4,7 @@
   "delete": "Delete",
   "cancel": "Cancel",
   "create": "Create",
+  "remove": "Remove",
   "extrasIngredients": "extrasIngredients",
   "noCategoriesFound": "No categories found",
   "noProductsFound": "No products found",
@@ -194,5 +195,12 @@
     "deleteProductSucess": "Product deleted successfull",
     "updateUserSucess": "User updated successfull",
     "deleteUserSucess": "User deleted successfull"
-  }
+  },
+  "cart": {
+    "button": "Add To Cart",
+    "pick": "Pick your size",
+    "anyExtra": " Any Extras",
+    "inCart": "In cart"
+  },
+  "footer": "@ 2025 All rights reserved"
 }

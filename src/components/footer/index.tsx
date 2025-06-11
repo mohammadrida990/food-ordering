@@ -1,8 +1,14 @@
+import { getCurrentLocale } from "@/lib/getCurrentLocale";
+import getTrans from "@/lib/translation";
+
 const Footer = async () => {
+  const locale = await getCurrentLocale();
+  const translations = await getTrans(locale);
+
   return (
     <footer className="border-t p-8 text-center text-accent">
       <div className="container">
-        <p>@ 2025 All rights reserved</p>
+        <p>{translations.footer}</p>
       </div>
     </footer>
   );

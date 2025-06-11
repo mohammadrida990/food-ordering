@@ -15,6 +15,7 @@ import { toast } from "sonner";
 import { InputTypes, Routes } from "@/consts/enum";
 import Loader from "../Loader";
 import { updateProfile } from "./_action/updateProfile";
+import { useSession } from "next-auth/react";
 
 function EditUserForm({
   translations,
@@ -23,7 +24,7 @@ function EditUserForm({
   translations: Translations;
   user: Session["user"];
 }) {
-  // const session = useSession();
+  const session = useSession();
   const formData = new FormData();
 
   Object.entries(user).forEach(([key, value]) => {
@@ -105,7 +106,7 @@ function EditUserForm({
           );
         })}
 
-        {user.role === UserRole.ADMIN && (
+        {session.data?.user.role === UserRole.ADMIN && (
           <div className="flex items-center gap-2 my-4">
             <Checkbox
               name="admin"

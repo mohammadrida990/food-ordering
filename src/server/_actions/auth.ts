@@ -1,11 +1,13 @@
 "use server";
 
+import { Pages, Routes } from "@/consts/enum";
 import { Locale } from "@/i18n.config";
 import { getCurrentLocale } from "@/lib/getCurrentLocale";
 import { db } from "@/lib/prisma";
 import getTrans from "@/lib/translation";
 import { loginSchema, signUpSchema } from "@/validations/auth";
 import bcrypt from "bcrypt";
+import { revalidatePath } from "next/cache";
 
 export const login = async (
   credentials: Record<"email" | "password", string> | undefined,
@@ -96,6 +98,11 @@ export const signup = async (prevState: unknown, formData: FormData) => {
         password: hashedPassword,
       },
     });
+
+    revalidatePath(`${locale}/${Routes.ADMIN}/${Pages.USERS}`);
+    revalidatePath(
+      `${locale}/${Routes.ADMIN}/${Pages.USERS}/${createdUser.id}/${Pages.EDIT}`
+    );
 
     return {
       status: 201,

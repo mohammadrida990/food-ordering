@@ -6,7 +6,7 @@ import { ProductWithRelations } from "@/types/product";
 
 const MenuItem = ({ item }: { item: ProductWithRelations }) => {
   return (
-    <li className="mb-6">
+    <li className="p-6 rounded-lg text-center group hover:bg-white hover:shadow-md hover:shadow-black/25 transition-all">
       <div className="relative w-48 h-48 mx-auto">
         <Image
           src={item.image}
